@@ -8,19 +8,19 @@
  * Return: If an error occurs - NULL.
  *         Otherwise - a pointer to the new node.
  */
-int main(void)
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-    binary_tree_t *root = NULL;
+	binary_tree_t *new;
 
-    root = binary_tree_node(NULL, 42); /* Create a binary tree node */
+	new = malloc(sizeof(binary_tree_t));
+	if (new == NULL)
+		return (NULL);
 
-    if (root == NULL)
-    {
-        printf("Node creation failed.\n");
-        return (1);
-    }
+	new->n = value;
+	new->parent = parent;
+	new->left = NULL;
+	new->right = NULL;
 
-    printf("Node created with value: %d\n", root->n);
-
-    return (0);
+	return (new);
 }
+
