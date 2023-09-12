@@ -23,8 +23,8 @@ typedef struct binary_tree_s
     struct binary_tree_s *right;
 } binary_tree_t;
 
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
-void binary_tree_delete(binary_tree_t *tree);
+binary_tree_t 'binary_tree_node'(binary_tree_t *parent, int value);
+void 'binary_tree_delete'(binary_tree_t *tree);
 
 /* Other typedefs */
 typedef struct binary_tree_s bst_t;
