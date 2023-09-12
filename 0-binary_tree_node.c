@@ -12,7 +12,7 @@ int main(void)
 {
     binary_tree_t *root = NULL;
 
-    root = binary_tree_node(NULL, 42); // Create a binary tree node
+    root = binary_tree_node(NULL, 42); /* Create a binary tree node */
 
     if (root == NULL)
     {
